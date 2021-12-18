@@ -7,7 +7,7 @@ def sketch(image):
     ret,mask = cv2.threshold(canny_edges,70,255,cv2.THRESH_BINARY_INV)
     return mask 
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)# for live if want to use a precorded video , enter path of video in place of "0"
 
 while(True):
     ret,frame = cap.read()
